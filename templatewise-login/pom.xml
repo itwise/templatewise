@@ -1,0 +1,24 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	
+	<parent>
+		<groupId>fury.framewise</groupId>
+		<artifactId>framewise-parent</artifactId>
+		<version>1.0.0-SNAPSHOT</version>
+	</parent>
+
+	<groupId>fury.templatewise</groupId>
+	<artifactId>templatewise-login</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+	
+	<dependencies>
+
+		<!-- framewise -->
+		<groupId>fury.framewise</groupId>
+		<artifactId>framewise-web</artifactId>
+		<version>1.0.0-SNAPSHOT</version>
+		
+	</dependencies>
+	
+</project>
