@@ -93,3 +93,5 @@ crashlytics-build.properties
 /target/
 
 *.class
+
+*.class
