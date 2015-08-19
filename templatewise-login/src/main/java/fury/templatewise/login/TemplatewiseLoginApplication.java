@@ -4,7 +4,6 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.builder.SpringApplicationBuilder;
 import org.springframework.boot.context.web.SpringBootServletInitializer;
-import org.springframework.context.annotation.Profile;
 import org.springframework.context.annotation.PropertySource;
 
 @SpringBootApplication
@@ -16,7 +15,6 @@ public class TemplatewiseLoginApplication extends SpringBootServletInitializer {
 		return application.sources(TemplatewiseLoginApplication.class);
 	}
 	
-	@Profile("local")
 	public static void main(String[] args) {
 		SpringApplication.run(TemplatewiseLoginApplication.class, args);
 	}
