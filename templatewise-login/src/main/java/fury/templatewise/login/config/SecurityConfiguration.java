@@ -29,7 +29,10 @@ public class SecurityConfiguration extends WebSecurityConfigurerAdapter {
 	protected void configure(HttpSecurity http) throws Exception {
 		http
 			.authorizeRequests()
-				.antMatchers("/admin/**").access("hasRole('ROLE_ADMIN')")
+				.antMatchers("/login/facebook/**").permitAll()
+				.antMatchers("/login/google/**").permitAll()
+				.antMatchers("/login/twitterCheck/**").permitAll()
+				.antMatchers("/login/twitter/**").permitAll()
 				.anyRequest().authenticated()
 				.and()
 			.formLogin()			// login 설정 (로그인에 대한 상세 설정 모두 확인 필요함)
