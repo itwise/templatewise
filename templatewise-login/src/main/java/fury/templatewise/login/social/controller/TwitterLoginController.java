@@ -22,6 +22,7 @@ public class TwitterLoginController {
     @RequestMapping(value = "/login/twitterCheck")
     public String loginTwitterCheck(HttpServletRequest request) {
 
+        // git sub test
         Twitter twitter = new TwitterFactory().getInstance();
         twitter.setOAuthConsumer("ztvVN4IJ5cgJLMACtkW9rZppm", "pFo7JJE4fL8taSg5o0MSmR49I5EN3a8c7CX2nFRbtoTS2gCz5l");
 
